@@ -9,11 +9,11 @@ Please check the challenge from [JavaScript30](http://wesbos.com/javascript30/).
 ![Screenshot of the app](img/screen-record.gif)
 
 ## About this Application
-- Create a dropdown menu which background size will transform based on the width and height of the content.
+- Create a dropdown menu which background size will transform based on the width and height of list contents.
 
 - Use `position: absolute` for the dropdown background
 
-- Use `getBoundingClientRect()` to get the DOM element size.
+- Use `.getBoundingClientRect()` to get the DOM element size.
 
 
 ## Setup/Installation
