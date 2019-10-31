@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open sans', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 0.8em;
+}
+
+nav {
+    position: relative;
+    perspective: 600px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.cool > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.cool > li > a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown {
+    padding: 20px;
+    position: absolute;
+    top: -20px;
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 2px;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    will-change: opacity;
+    display: none;
+}
+
+.trigger-enter .dropdown {
+    display: block;
+}
+
+.trigger-enter-active .dropdown {
+    opacity: 1;
+}
+
+.dropdown-background {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 50px 100px rgba(50, 50, 90, 0.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s, opacity 100ms, transform 200ms;
+    transform-origin: 50% 0;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    display: block;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.bio {
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.bio img {
+    /* min-width: 200px; */
+    float: left;
+    margin-right: 20px;
+}
+
+.certifications {
+    min-width: 300px;
+}
+
+.certifications li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: #ffc600;
+}
+
+a.button {
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: black;
+    display: block;
+}
