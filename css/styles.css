@@ -52,11 +52,11 @@ nav ul {
     position: absolute;
     top: -20px;
     overflow: hidden;
-    opacity: 0;
     border-radius: 2px;
     transition: all 0.5s;
     transform: translateY(100px);
     will-change: opacity;
+    opacity: 0;
     display: none;
 }
 
@@ -100,7 +100,7 @@ nav ul {
 }
 
 .bio img {
-    /* min-width: 200px; */
+    width: 200px;
     float: left;
     margin-right: 20px;
 }
